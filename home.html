@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bottoman Media</title>
+    <link rel="stylesheet" href="style.css" />
+
+ 
+</head>
+
+<body>
+  <div class="logo">
+    <img src="images/logo.BM.jpg" alt="Bottoman Media Logo" width="200" />
+  </div>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About&nbsp;Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="main">
+    <div id="about">
+      <h2>About Us</h2>
+      <div id="slideshows">
+        <p class="active">Bottoman Media is dedicated to honoring lives and amplifying memories.</p>
+        <p>We provide a range of media services that celebrate life.</p>
+        <p>From heartfelt funeral notices to immersive audio obituaries.</p>
+        <p>Our mission is to create meaningful tributes that resonate with families and communities,</p>
+        <p>ensuring that every life story is told with dignity and respect.</p>
+        <p>We believe in the power of media to connect people and preserve legacies.</p>
+        <p>Explore our services to see how we can help you celebrate the lives of your loved ones.</p>
+      </div>
+    </div>
+
+    <h2 style="text-align:center;">Our Services</h2>
+    <p style="text-align:center;">We offer a variety of services to help you celebrate the lives of your loved ones.</p>
+
+    <div id="services">
+      <div>
+        <h3>Funeral &amp; Memorial Notices</h3>
+        <p>Personalised funeral notices that honour the memory of your loved ones.</p>
+        <p>Heartfelt and respectful, capturing every detail.</p>
+      </div>
+      <div>
+        <h3>Audio Obituaries</h3>
+        <p>Immersive audio tributes celebrating life stories.</p>
+        <p>High‑quality production for lasting memories.</p>
+      </div>
+      <div>
+        <h3>Videography</h3>
+        <p>Professional videos to capture special moments and memories.</p>
+        <p>Crafted to reflect the true essence of each life.</p>
+      </div>
+      <div>
+        <h3>PA System Hire</h3>
+        <p>Clear, reliable sound for memorial services.</p>
+        <p>Simple setup with full technical support.</p>
+      </div>
+      <div>
+        <h3>Photo Slideshows</h3>
+        <p>Beautiful slideshows that tell life stories through images.</p>
+      </div>
+      <div>
+        <h3>Audio Tributes</h3>
+        <p>Custom audio pieces celebrating unique personal stories.</p>
+      </div>
+      <div>
+        <h3>Prerecorded Tombstone Messages</h3>
+        <p>Personal messages that can be played at gravesites or memorials.</p>
+      </div>
+      <div>
+        <h3>Programmes</h3>
+        <p>Designed and printed memorial programmes as keepsakes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to learn more about our services, please contact us.</p>
+    <p id="tel">☎️ +27&nbsp;83&nbsp;329&nbsp;3555</p>
+    <p id="email">📧 bottomanpholani@outlook.com &nbsp;|&nbsp; pholanibottoman@gmail.com</p>
+    <p id="adress">🗺️ 789&nbsp;NU9, Mdantsane</p>
+    <p>We are here to help you celebrate the lives of your loved ones with dignity and respect.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2021 Bottoman Media. All rights reserved.</p>
+    <p>Follow us on social media for updates and news.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll("#slideshows p");
+    let index = 0;
+
+    function showNextSlide() {
+      slides.forEach(p => p.classList.remove("active"));
+      slides[index].classList.add("active");
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showNextSlide, 5000);
+  </script>
+</body>
+</html>
