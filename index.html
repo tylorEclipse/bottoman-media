@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+   
+    
+</head>
+<body>
+    <div class="landing-page">
+    <h1>welcome to bottoman media</h1>
+
+  <div class="slide active">Honoring lives, and amplifying memories</div>
+  <div class="slide">From heartfelt funeral notices to immersive audio obituaries</div>
+  <div class="slide">Bottoman Media offers a range of media services that celebrate life</div>
+  <div class="slide">Explore our services to see how we can help you celebrate the lives of your loved ones</div>
+  <div class="slide">We believe in the power of media to connect people and preserve legacies</div>
+  <div class="slide">Our mission is to create meaningful tributes that resonate with families and communities</div>
+  <div class="slide">Ensuring that every life story is told with dignity and respect</div>
+
+  <button id="to-home">Explore Our Services</button>
+    </div> 
+
+    <script>
+        
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showNextSlide() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+    document.getElementById('to-home').addEventListener('click', function () {
+      window.location.href = 'home.html';
+    });
+  </script>
+
+    
+</body>
+</html>
