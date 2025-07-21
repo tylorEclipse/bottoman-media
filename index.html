@@ -22,7 +22,7 @@
   <div class="slide">Our mission is to create meaningful tributes that resonate with families and communities</div>
   <div class="slide">Ensuring that every life story is told with dignity and respect</div>
 
-  <button id="to-home">Explore Our Services</button>
+  <button id="to-home" title="Explore our services" alt="this will take you to home page">Explore Our Services</button>
     </div> 
 
     <script>
@@ -36,7 +36,7 @@
       slides[index].classList.add('active');
     }
 
-    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+    setInterval(showNextSlide, 3000);
 
     document.getElementById('to-home').addEventListener('click', function () {
       window.location.href = 'home.html';
