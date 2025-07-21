@@ -78,13 +78,13 @@
       color: rgba(173, 216, 230, 0.85);
     }
 
-    /* -- Enlarged about us text -- */
+    
     #slideshows p {
       display: none;
       opacity: 0;
       transition: opacity 1s ease-in-out;
       text-align: center;
-      font-size: 3.3rem; /* 3x original (~1.1rem) */
+      font-size: 3.3rem; 
       line-height: 1.4;
     }
 
